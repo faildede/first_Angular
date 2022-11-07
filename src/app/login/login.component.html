@@ -1,0 +1,10 @@
+
+
+<div action="/home" class="container mx-auto flex-col border-4 w-96 border-solid rounded-xl my-auto">
+  <div class="m-8 ">
+    <h1 class="font-semibold text-xl">Регистрация</h1>
+    <input class="p-4 px-8 rounded-xl font-semibold m-4 border-2 outline-none" type="text" placeholder="email" #email>
+    <input class="p-4 px-8 rounded-xl font-semibold m-4 border-2 outline-none" type="text" placeholder="password" #password>
+    <button class="mx-auto border-4 border-solid rounded-xl text-[#ffff] bg-green-500 px-8 p-2 " type="submit" (click)="signIn(email.value, password.value)">submit</button>
+  </div>
+</div>
