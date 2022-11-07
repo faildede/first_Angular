@@ -11,7 +11,8 @@ import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
 import { LoginComponent } from './login/login.component';
 import { AuthComponent } from './auth/auth.component';
-import 'tw-elements';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import 'tw-elements';
     ProductsComponent,
     ProductComponent,
     LoginComponent,
-    AuthComponent
+    AuthComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import 'tw-elements';
     FormsModule,
     HttpClientModule,
     FirebaseMethods,
-    tw-elements
+
   ],
   providers: [],
   bootstrap: [AppComponent]
