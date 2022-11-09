@@ -4,13 +4,11 @@
 	  <div class="container rounded-lg bg-white mx-auto border-4 w-full border-gray p-8 m-2">
 		<img class="h-20" [src]="product.img">
 		<p class="font-semibold text-2xl">{{ product.title }}</p>
-		<p class="text-base font-medium border-b-4 border-dashed">price: {{ product.price }}</p>
-		<p class="text-base font-medium border-b-4 border-dashed">RAM: {{ product.spec.RAM }}</p>
-		<p class="text-base font-medium border-b-4 border-dashed">ROM:{{ product.spec.ROM }}</p>
+		<p class="text-base font-medium border-b-4 border-dashed">Цена: {{ product.price }} ₸</p>
 	  </div>
 	</div>
   </div>
 
-
+  <app-footer></app-footer>
 
 <router-outlet></router-outlet>

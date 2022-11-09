@@ -1,13 +1,19 @@
 
-<div class="fl bg-white ">
-  <div class="imgIn">
-    <img [src]="product.img" class="" />
-</div>
-    <div class="txtIn">
-      <p class="dark:text-gray-400">{{ product.id }}</p>
+<div class="flex container mx-auto  bg-white ">
+ <div class="w-24">
+  <img class="w-full" [src]="product.img" class="" />
+ </div>
+    <div class="">
       <h1 class="text-5xl font-bold py-6">{{ product.title }}</h1>
-      <p class="dark:text-gray-400">RAM:{{ product.spec.RAM }}</p>
-      <p class="dark:text-gray-400">ROM:{{ product.spec.ROM }}</p>
-      <p>price:{{ product.price }}</p>
+      <div class="py-4">
+      <p class="text-lg font-semibold">Описание</p>
+      <p class="dark:text-gray-400 pt-4 text-sm">Объем оперативной памяти, ГБ: {{ product.spec.RAM }}</p>
+      <p class="dark:text-gray-400 pt-4 text-sm">Объем SSD накопителя, ГБ: {{ product.spec.ROM }}</p>
+      <p class="pt-4 text-sm">Серия процессора: {{ product.spec.cpu }}</p>
+      <p class="pt-4 text-sm"> Операционная система {{ product.spec.OS }}</p>
+      </div>
+      <p>Цена:  {{ product.price }}</p>
   </div>
 </div>
+
+<app-footer></app-footer>
